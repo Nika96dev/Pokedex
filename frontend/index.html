@@ -1,0 +1,23 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Cerca Pokémon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cerca Pokémon</h1>
+        <div class="search-container">
+            <input type="text" id="pokemonInput" placeholder="Inserisci il nome...">
+            <button onclick="searchPokemon()">Cerca</button>
+        </div>
+        <div id="result" class="hidden">
+            <img id="pokemonImage" alt="Pokemon Image">
+            <p id="errorMessage" class="error"></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
